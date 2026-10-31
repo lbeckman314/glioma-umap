@@ -39,3 +39,16 @@ across runs. `--compare` also writes `docs/n_neighbors.png`.
 Small `n_neighbors` values emphasize local structure and split the IDH-wildtype
 tumors into islands; larger values keep the global layout of the three major
 groups (IDH-wildtype, IDH-mutant 1p/19q-codeleted, and G-CIMP-high).
+
+## Web app
+
+A Vite + React + TypeScript app that draws the embedding with
+[deck.gl](https://deck.gl/). Color tumors by subtype, IDH status, disease or
+grade; hover a tumor for its clinical fields, or a legend entry to highlight
+that group.
+
+```sh
+npm install
+npm run dev     # http://localhost:5173
+npm run build   # static site in dist/
+```
