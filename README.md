@@ -1,6 +1,8 @@
 # glioma-umap
 Demo UMAP analysis site built on the TCGA glioma dataset from UCSC Xena (2020)
 
+**Live demo:** https://lbeckman314.github.io/glioma-umap/
+
 ![UMAP of TCGA glioma tumors at n_neighbors 5, 15 and 50](docs/n_neighbors.png)
 
 ## Data
@@ -52,3 +54,6 @@ npm install
 npm run dev     # http://localhost:5173
 npm run build   # static site in dist/
 ```
+
+Pushes to `main` deploy `dist/` to GitHub Pages via
+`.github/workflows/deploy.yml`.
